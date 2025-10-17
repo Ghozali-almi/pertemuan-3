@@ -22,7 +22,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
             'login_at' => date('Y-m-d H:i:s')
         ];
 
-        echo "Selamat datang: " . htmlspecialchars($username) . ", Anda telah login sebanyak: " . count($_SESSION['login']) . " kali";
+        echo "Welcome: " . htmlspecialchars($username) . ", Anda telah login sebanyak: " . count($_SESSION['login']) . " kali";
         echo "<br>";
         echo "<a href='logout.php'>Logout</a>";
         echo "<pre>";
